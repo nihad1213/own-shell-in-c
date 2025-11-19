@@ -11,6 +11,6 @@
 // Function definitions
 int printSingleCharacter(char chr);
 int printString(const char *str);
-
+int printError(const char *str);
 
 #endif

@@ -32,6 +32,6 @@ int printString(const char *str) {
  * @str: string
  * Return: string
  */
-int printError() {
+int printError(const char *str) {
 
 }
