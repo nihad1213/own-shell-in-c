@@ -16,9 +16,7 @@ int printSingleCharacter(char chr) {
  * Return: string
  */
 int printString(const char *str) {
-    if (!str) {
-        return ERROR;
-    }
+    if (!str) return ERROR;
 
     for (int length = 0; str[length] != '\0'; length++) {
         printSingleCharacter(str[length]);
@@ -33,5 +31,11 @@ int printString(const char *str) {
  * Return: string
  */
 int printError(const char *str) {
+    if (!str) return ERROR;
 
+    printString("\033[1;31m");
+    printString(str);
+    printString("\033[0m\n");
+
+    return SUCCESS;
 }
