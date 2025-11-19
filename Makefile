@@ -1,7 +1,7 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -pedantic -std=c23 -g
 
-SRCS = src/main.c
+SRCS = src/main.c src/custom_io.c
 OBJS = $(SRCS:.c=.o)
 
 TARGET = own_shell
