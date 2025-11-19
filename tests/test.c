@@ -1,4 +1,4 @@
-#include "include/custom_io.h"
+#include "custom_io.h"
 
 int main(void) {
     printSingleCharacter('A');
