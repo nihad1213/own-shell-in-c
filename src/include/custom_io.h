@@ -12,5 +12,7 @@
 int printSingleCharacter(char chr);
 int printString(const char *str);
 int printError(const char *str);
+int printWarning(const char *str);
+int printSuccess(const char *str);
 
 #endif

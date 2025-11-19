@@ -40,6 +40,32 @@ int printError(const char *str) {
     return SUCCESS;
 }
 
+/**
+ * printWarning - Print warning message
+ * @str: string
+ * Return: strings
+ */
 int printWarning(const char *str) {
+    if (!str) return ERROR;
     
+    printString("\033[1;33m");
+    printString(str);
+    printString("\033[0m\n");
+
+    return SUCCESS;
+}
+
+/**
+ * printWarning - Print success message
+ * @str: string
+ * Return: strings
+ */
+int printSuccess(const char *str) {
+    if (!str) return ERROR;
+
+    printString("\033[1;32m");
+    printString(str);
+    printString("\033[0m\n");
+
+    return SUCCESS;
 }
