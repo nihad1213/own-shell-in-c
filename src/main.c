@@ -1,6 +1,7 @@
-#include <stdio.h>
+#include "include/custom_io.h"
 
 int main() {
-    putchar('A');
+    // Test printSingleCharater function
+    printSingleCharacter('A');
     return 0;
 }
