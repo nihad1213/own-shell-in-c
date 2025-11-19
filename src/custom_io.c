@@ -39,3 +39,7 @@ int printError(const char *str) {
 
     return SUCCESS;
 }
+
+int printWarning(const char *str) {
+    
+}
