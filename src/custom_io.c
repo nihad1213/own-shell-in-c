@@ -13,7 +13,7 @@ int printSingleCharacter(char chr) {
 /**
  * printString - Print string
  * @str: string
- * Return: String
+ * Return: string
  */
 int printString(const char *str) {
     if (!str) {
@@ -25,4 +25,13 @@ int printString(const char *str) {
     }
 
     return SUCCESS;
+}
+
+/**
+ * printError - Print error message
+ * @str: string
+ * Return: string
+ */
+int printError() {
+
 }
