@@ -7,6 +7,7 @@
 
 #define ERROR  -1;
 #define SUCCESS 0;
+#define BUFSIZE 1024;
 
 // Function definitions
 int printSingleCharacter(char chr);
