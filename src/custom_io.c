@@ -70,5 +70,28 @@ int printSuccess(const char *str) {
     return SUCCESS;
 }
 
+/**
+ * getLine - Get inputs from buffer
+ * @line: pointer to buffer pointer
+ * @n: pointer to buffer size
+ * @stream: input stream
+ * return: number of characters read or -1 on failure/EOF
+ */
+ssize_t getLine(char **line, size_t *n, FILE *stream) {
+    if (!line || !n || !stream) return ERROR;
+
+    if (*line == NULL || *n == 0) {
+        *n = BUFSIZE;
+        *line = malloc(*n);
+        if (!*line) 
+            return ERROR;
+        
+    }
+
+    if (fgets(*line, *n, stream) == NULL)
+        return ERROR;
+    
+    return strlen(*line);
+}
 
 

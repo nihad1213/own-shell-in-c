@@ -17,6 +17,6 @@ int printString(const char *str);
 int printError(const char *str);
 int printWarning(const char *str);
 int printSuccess(const char *str);
-ssize_t getLine(char **line, size_t *n, FILE *stream);
+int getLine(char **line, size_t *n, FILE *stream);
 
 #endif
