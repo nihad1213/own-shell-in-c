@@ -4,7 +4,7 @@ int main() {
     char input[BUFSIZE];
 
     while (1) {
-        printSingleCharacter('$');
+        printString('$ ');
         int len = getLine(input, BUFSIZE);
 
         if (len == -1) {
