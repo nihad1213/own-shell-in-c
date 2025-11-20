@@ -2,7 +2,7 @@
 
 int main(void) {
 
-    int result = cmpString("test", "test");
+    int result = cmpString("testas", "test");
     printf("%d\n", result);
     printSingleCharacter('A');
     // printSingleCharacter('');

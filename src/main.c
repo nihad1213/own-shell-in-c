@@ -14,7 +14,10 @@ int main() {
 
         if (len == 0) continue;
 
-        // Commands will start in here
+        if (cmpString(input, "exit") == 0) {
+            printSuccess("Exiting program...\n");
+            break;
+        }
 
     }
     
