@@ -1,6 +1,9 @@
 #include "custom_io.h"
 
 int main(void) {
+
+    int result = cmpString("test", "test");
+    printf("%d\n", result);
     printSingleCharacter('A');
     // printSingleCharacter('');
     printString("\nHello World!\n");
