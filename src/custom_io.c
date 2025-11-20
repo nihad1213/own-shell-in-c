@@ -94,4 +94,14 @@ int getLine(char *buffer, int size) {
     return len;
 }
 
+/**
+ * cmpString - Compare 2 string
+ * @
+ * @
+ * return:  
+ */
+int cmpString(const char *str1, const char *str2) {
+    
+}
+
 

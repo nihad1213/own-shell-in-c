@@ -19,5 +19,6 @@ int printError(const char *str);
 int printWarning(const char *str);
 int printSuccess(const char *str);
 int getLine(char *buffer, int size);
+int cmpString(const char *str1, const char *str2);
 
 #endif
