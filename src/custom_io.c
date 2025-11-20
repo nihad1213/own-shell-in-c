@@ -77,21 +77,21 @@ int printSuccess(const char *str) {
  * @stream: input stream
  * return: number of characters read or -1 on failure/EOF
  */
-ssize_t getLine(char **line, size_t *n, FILE *stream) {
-    if (!line || !n || !stream) return ERROR;
+int getLine(char *buffer, int size) {
+    if (fgets(buffer, size, stdin) == NULL) return ERROR;
 
-    if (*line == NULL || *n == 0) {
-        *n = BUFSIZE;
-        *line = malloc(*n);
-        if (!*line) 
-            return ERROR;
-        
+    int len = 0;
+
+    while (buffer[len] != '\0') {
+        if (buffer[len] == '\n') {
+            buffer[len] = '\0';
+            break;
+        }
+
+        len++;
     }
 
-    if (fgets(*line, *n, stream) == NULL)
-        return ERROR;
-    
-    return strlen(*line);
+    return len;
 }
 
 
