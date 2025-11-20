@@ -43,7 +43,7 @@ int printError(const char *str) {
 /**
  * printWarning - Print warning message
  * @str: string
- * Return: strings
+ * Return: string
  */
 int printWarning(const char *str) {
     if (!str) return ERROR;
@@ -58,7 +58,7 @@ int printWarning(const char *str) {
 /**
  * printWarning - Print success message
  * @str: string
- * Return: strings
+ * Return: string
  */
 int printSuccess(const char *str) {
     if (!str) return ERROR;
