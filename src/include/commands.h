@@ -1,10 +1,11 @@
 /**
  * @file commands.h
- * @brief This header file provides commands like cd, mkdir
+ * @brief Header for shell command handlers (exit, cd, etc.)
  */
+
 #ifndef COMMANDS_H
 #define COMMANDS_H
 
-
+int handle_exit_command(void);
 
 #endif

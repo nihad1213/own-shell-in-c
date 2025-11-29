@@ -1,10 +1,11 @@
 #include "include/custom_io.h"
+#include "include/commands.h"
 
 int main() {
     char input[BUFSIZE];
 
     while (1) {
-        printString('$ ');
+        printString("$ ");
         int len = getLine(input, BUFSIZE);
 
         if (len == -1) {
@@ -15,8 +16,8 @@ int main() {
         if (len == 0) continue;
 
         if (cmpString(input, "exit") == 0) {
-            printSuccess("Exiting program...\n");
-            break;
+            if (handle_exit_command())
+                break;
         }
 
     }
