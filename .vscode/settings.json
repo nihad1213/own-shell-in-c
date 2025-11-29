@@ -1,6 +1,7 @@
 {
     "files.associations": {
         "*.embeddedhtml": "html",
-        "custom_io.h": "c"
+        "custom_io.h": "c",
+        "unistd.h": "c"
     }
 }
