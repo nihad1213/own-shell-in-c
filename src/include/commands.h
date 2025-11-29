@@ -6,6 +6,6 @@
 #ifndef COMMANDS_H
 #define COMMANDS_H
 
-int handle_exit_command(void);
+int handleExitCommand(void);
 
 #endif

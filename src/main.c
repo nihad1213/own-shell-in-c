@@ -16,7 +16,7 @@ int main() {
         if (len == 0) continue;
 
         if (cmpString(input, "exit") == 0) {
-            if (handle_exit_command())
+            if (handleExitCommand())
                 break;
         }
 

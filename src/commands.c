@@ -10,7 +10,7 @@
  *
  * @return int - Always returns 1 to indicate the shell should exit.
  */
-int handle_exit_command(void) {
+int handleExitCommand(void) {
     printSuccess("Exiting program...\n");
     return 1;
 }
